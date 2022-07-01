@@ -5,7 +5,7 @@ bot = telebot.TeleBot('5514577445:AAHkIfQt_UbAwhWNscbgFXRamRGiFz18eEc')
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_message(message.chat.id, 'Для получения ссылки нажмите / и выберите нужный предмет', parse_mode='html')
-
+https://github.com/ligdaking/namebot/blob/master/namebot
 @bot.message_handler(commands=['dl'])
 def start(message):
     bot.send_message(message.chat.id, 'dl.nure.ua', parse_mode='html')
