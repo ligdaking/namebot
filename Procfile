@@ -1,2 +1,2 @@
-worker: default/namebot.py
+worker: default/namebot
 
