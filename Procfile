@@ -1,2 +1,3 @@
-worker: default/namebot.py
+worker: namebot/namebot.py
+web: gunicorn app:app
 

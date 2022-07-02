@@ -18,5 +18,5 @@ def start(message):
 def start(message):
     bot.send_message(message.chat.id, 'https://cutt.ly/mKN1PwW', parse_mode='html')
 
-bot.polling(none_stop=True)
 
+bot.polling(none_stop=True)
