@@ -23,4 +23,11 @@ def start(message):
     file = open('tek.pdf','rb')
     bot.send_document(message.chat.id, file, 'ТЕК КР1')
 
+@bot.message_handler(content_types=['text'])
+def handle_text(message):
+    if message.text == "Марк, кто пидарок?":
+        bot.send_message(message.from_user.id, 'Пидарок — Игорь Бабиков')
+    elif message.text == "Эль гатоо":
+        bot.send_message(message.from_user.id, 'Эль гатоо')
+
 bot.polling(none_stop=True)
