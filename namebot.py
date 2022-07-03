@@ -26,8 +26,8 @@ def start(message):
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
     if message.text == "Марк, кто пидарок?":
-        bot.send_message(message.from_user.id, 'Пидарок — Игорь Бабиков')
+        bot.send_message(message.chat.id, 'Пидарок — Игорь Бабиков')
     elif message.text == "Эль гатоо":
-        bot.send_message(message.from_user.id, 'Эль гатоо')
+        bot.send_message(message.chat.id, 'Эль гатоо')
 
 bot.polling(none_stop=True)
