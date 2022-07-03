@@ -18,9 +18,9 @@ def start(message):
 def start(message):
     bot.send_message(message.chat.id, 'https://cutt.ly/mKN1PwW', parse_mode='html')
 
-@bot.message_handler(commands=['en_test15'])
+@bot.message_handler(commands=['tek_kr'])
 def start(message):
     file = open('tek.pdf','rb')
-    bot.send_document(message.chat.id, file, 'Ответы по английскому на тест 15')
+    bot.send_document(message.chat.id, file, 'ТЕК КР1')
 
 bot.polling(none_stop=True)
