@@ -29,6 +29,7 @@ def handle_text(message):
         bot.send_message(message.chat.id, 'Пидарок — Игорь Бабиков.')
     elif message.text == "Я пидарок":
         bot.send_message(message.chat.id, 'Я знаю.')
+
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
     if message.text == "Стас":
