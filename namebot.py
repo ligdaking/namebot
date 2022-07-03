@@ -30,10 +30,4 @@ def handle_text(message):
     elif message.text == "Я пидарок":
         bot.send_message(message.chat.id, 'Я знаю.')
 
-@bot.message_handler(content_types=['text'])
-def handle_text(message):
-    if message.text == "Стас":
-        bot.send_message(message.chat.id, 'Унитаз.')
-    elif message.text == "Евген":
-        bot.send_message(message.chat.id, 'Мать твоя Евген, а он Евгений')
 bot.polling(none_stop=True)
