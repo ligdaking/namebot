@@ -25,9 +25,14 @@ def start(message):
 
 @bot.message_handler(content_types=['text'])
 def handle_text(message):
-    if message.text == "Марк, кто пидарок?":
-        bot.send_message(message.chat.id, 'Пидарок — Игорь Бабиков.')
-    elif message.text == "Я пидарок":
-        bot.send_message(message.chat.id, 'Я знаю.')
+    if message.text == "Стас":
+        bot.send_message(message.chat.id, 'унитаз.')
+    elif message.text == "women":
+        bot.send_message(message.chat.id, 'moment.')
+
+@bot.message_handler(commands=['group'])
+def start(message):
+    file = open('Список группы ЕСТМ-20-1.png','rb')
+    bot.send_photo(message.chat.id, file, 'Список ЕСТМ-20-1')
 
 bot.polling(none_stop=True)
