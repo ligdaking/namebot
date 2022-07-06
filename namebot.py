@@ -32,7 +32,7 @@ def handle_text(message):
 
 @bot.message_handler(commands=['group'])
 def start(message):
-    file = open('Список группы ЕСТМ-20-1.png','rb')
+    file = open('groupestm.png','rb')
     bot.send_photo(message.chat.id, file, 'Список ЕСТМ-20-1')
 
 bot.polling(none_stop=True)
