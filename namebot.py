@@ -46,6 +46,6 @@ def start(message):
 
 @bot.message_handler(commands=['mails'])
 def start(message):
-    bot.send_message(message.chat.id, "*Куратор* Колендовська Марина Мирославівна — marina.kolendovska@nure.ua\n*ТТЗтМ* Шейко Сергій Олександрович — sergiy.sheiko@nure.ua\n*ОМкТ* Цехмістро Роман Іванович — tsekhmistroroman@gmail.com\n Далі буде", parse_mode='MarkDown')
+    bot.send_message(message.chat.id, "*Куратор:* Колендовська М. М. marina.kolendovska@nure.ua\n*ТТЗтМ:* Шейко С. О. sergiy.sheiko@nure.ua\n*ОМкТ:* Цехмістро Р. І. tsekhmistroroman@gmail.com\n Далі буде", parse_mode='MarkDown')
 
 bot.polling(none_stop=True)
