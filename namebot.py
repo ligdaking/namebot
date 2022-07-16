@@ -8,7 +8,7 @@ def start(message):
 
 @bot.message_handler(commands=['help'])
 def start(message):
-    bot.send_message(message.chat.id, '/help — наявні команди\n/en — посилання на meet з ІМ\n/fv —  посилання на відповіді з ФВ\n/dl —  посилання на dlnure\n/myv — список групи\n/mails — електронні адреси викладачів', parse_mode='MarkDown')
+    bot.send_message(message.chat.id, '/en — посилання на meet з ІМ\n/fv —  посилання на відповіді з ФВ\n/dl —  посилання на dlnure\n/myv — список групи\n/mails — електронні адреси викладачів', parse_mode='MarkDown')
 
 @bot.message_handler(commands=['dl'])
 def start(message):
