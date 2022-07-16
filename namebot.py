@@ -44,4 +44,8 @@ def start(message):
     file = open('ESTMGO.png', 'rb')
     bot.send_photo(message.chat.id, file, 'bober')
 
+@bot.message_handler(commands=['mails'])
+def start(message):
+    bot.send_message(message.chat.id, "*Куратор* Колендовська Марина Мирославівна — marina.kolendovska@nure.ua\n*ТТЗтМ* Шейко Сергій Олександрович — sergiy.sheiko@nure.ua\n*ОМкТ* Цехмістро Роман Іванович — tsekhmistroroman@gmail.com\n Далі буде", parse_mode='MarkDown')
+
 bot.polling(none_stop=True)
