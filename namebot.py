@@ -36,7 +36,7 @@ def start(message):
 
 @bot.message_handler(commands=['tvel'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/shd-ueij-pfu">Твердотільна електроніка</a>\nВикладач: Галат Олександр Борисович', parse_mode='html')
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/eei-unrr-crn">Твердотільна електроніка</a>\nВикладач: Галат Олександр Борисович', parse_mode='html')
 
 @bot.message_handler(commands=['log'])
 def start(message):
