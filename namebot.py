@@ -32,7 +32,7 @@ def start(message):
 
 @bot.message_handler(commands=['csh'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/shd-ueij-pfu">Цифрова схемотехніка</a>\nВикладач: Тимошенко Леонід Петрович', parse_mode='html')
+    bot.send_message(message.chat.id, 'Пара: <a href="https://meet.google.com/tuh-uayt-hfr">Цифрова схемотехніка</a>\nВикладач: Тимошенко Леонід Петрович', parse_mode='html')
 
 @bot.message_handler(commands=['tvel'])
 def start(message):
