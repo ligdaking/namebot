@@ -1,5 +1,7 @@
 # -*- coding: utf8 -*-
 import telebot
+import random
+
 bot = telebot.TeleBot('5514577445:AAHkIfQt_UbAwhWNscbgFXRamRGiFz18eEc')
 
 @bot.message_handler(commands=['start'])
@@ -14,9 +16,6 @@ def start(message):
 def start(message):
     bot.send_message(message.chat.id, 'dl.nure.ua', parse_mode='html')
 
-@bot.message_handler(commands=['en'])
-def start(message):
-    bot.send_message(message.chat.id, '<a href="meet.google.com/shd-ueij-pfu">Пара ІМ</a>', parse_mode='html')
 
 @bot.message_handler(commands=['fv'])
 def start(message):
@@ -28,7 +27,7 @@ def start(message):
 
 @bot.message_handler(commands=['bd'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/shd-ueij-pfu">Бази даних</a>\nВикладач: Цехмістро Роман Іванович', parse_mode='html')
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/vwu-ajbb-wwh">Бази даних</a>\nВикладач: Цехмістро Роман Іванович', parse_mode='html')
 
 @bot.message_handler(commands=['csh'])
 def start(message):
@@ -55,5 +54,38 @@ def start(message):
 @bot.message_handler(commands=['mails'])
 def start(message):
     bot.send_message(message.chat.id, "поки юзлесс", parse_mode='MarkDown')
+
+
+
+
+
+@bot.message_handler(content_types=['text'])
+
+
+def first_number_step(message):
+    if message.text == 'Рандом':
+        msg = bot.send_message(message.chat.id, 'Введите начало диапазона')
+        bot.register_next_step_handler(msg, second_number_step)
+
+
+
+
+def second_number_step(message):
+    global NUM_first
+    NUM_first = int(message.text)
+    msg = bot.send_message(message.chat.id, 'Введите конец диапазона')
+    bot.register_next_step_handler(msg, result_number_step)
+
+
+
+def result_number_step(message):
+    global NUM_second
+    NUM_second = int(message.text)
+    result(message)
+
+
+
+def result(message):
+    bot.send_message(message.chat.id, 'Выпало число: ' + str(random.randint(NUM_first, NUM_second)))
 
 bot.polling(none_stop=True)
