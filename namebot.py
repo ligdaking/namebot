@@ -31,7 +31,7 @@ def start(message):
 
 @bot.message_handler(commands=['csh'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="https://meet.google.com/tuh-uayt-hfr">Цифрова схемотехніка</a>\nВикладач: Тимошенко Леонід Петрович\nКурс: <a href="dl.nure.ua/course/view.php?id=15261">тицяй</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313558">тицяй</a>', parse_mode="html")
+    bot.send_message(message.chat.id, 'Пара: <a href="https://meet.google.com/tuh-uayt-hfr">Цифрова схемотехніка</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313558">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15261">тицяй</a>\nВикладач: Тимошенко Леонід Петрович', parse_mode="html")
 
 @bot.message_handler(commands=['tvel'])
 def start(message):
