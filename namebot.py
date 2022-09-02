@@ -27,15 +27,15 @@ def start(message):
 
 @bot.message_handler(commands=['bd'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/vwu-ajbb-wwh">Бази даних</a>\nВикладач: Цехмістро Роман Іванович\nКурс на DL: <a href="dl.nure.ua/course/view.php?id=15303">тык</a>\n*Отметиться:* <a href="dl.nure.ua/mod/attendance/view.php?id=313810">тык</a>', parse_mode="MarkDown")
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/vwu-ajbb-wwh">Бази даних</a>\nВикладач: Цехмістро Роман Іванович\nКурс на DL: <a href="dl.nure.ua/course/view.php?id=15303">тык</a>\n*Отметиться:* <a href="dl.nure.ua/mod/attendance/view.php?id=313810">тык</a>', parse_mode="html")
 
 @bot.message_handler(commands=['csh'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="https://meet.google.com/tuh-uayt-hfr">Цифрова схемотехніка</a>\nВикладач: Тимошенко Леонід Петрович\nКурс на DL: <a href="dl.nure.ua/course/view.php?id=15261">тык</a>\n*Отметиться:* <a href="dl.nure.ua/mod/attendance/view.php?id=313558">тык</a>', parse_mode="MarkDown")
+    bot.send_message(message.chat.id, 'Пара: <a href="https://meet.google.com/tuh-uayt-hfr">Цифрова схемотехніка</a>\nВикладач: Тимошенко Леонід Петрович\nКурс на DL: <a href="dl.nure.ua/course/view.php?id=15261">тык</a>\n*Отметиться:* <a href="dl.nure.ua/mod/attendance/view.php?id=313558">тык</a>', parse_mode="html")
 
 @bot.message_handler(commands=['tvel'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/eei-unrr-crn">Твердотільна електроніка</a>\nВикладач: Галат Олександр Борисович\nКурс на DL: <a href="dl.nure.ua/course/view.php?id=14891">тык</a>\n*Отметиться:* <a href="dl.nure.ua/mod/attendance/view.php?id=318086">тык</a>', parse_mode="MarkDown")
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/eei-unrr-crn">Твердотільна електроніка</a>\nВикладач: Галат Олександр Борисович\nКурс на DL: <a href="dl.nure.ua/course/view.php?id=14891">тык</a>\n*Отметиться:* <a href="dl.nure.ua/mod/attendance/view.php?id=318086">тык</a>', parse_mode="html")
 
 @bot.message_handler(commands=['log'])
 def start(message):
