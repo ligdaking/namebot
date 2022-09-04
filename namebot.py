@@ -39,7 +39,7 @@ def start(message):
 
 @bot.message_handler(commands=['log'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/shd-ueij-pfu">Логіка*</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313810">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15303">тицяй</a>\nВикладач: Старікова Галина Геньївна', parse_mode='html')
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/erd-pxjo-ofy">Логіка*</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=306729">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=14147">тицяй</a>\nВикладач: Старікова Галина Геньївна', parse_mode='html')
 
 @bot.message_handler(commands=['tek_kr'])
 def start(message):
