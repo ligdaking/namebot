@@ -19,7 +19,7 @@ def start(message):
 
 @bot.message_handler(commands=['fv'])
 def start(message):
-    bot.send_message(message.chat.id, '<a href="https://cutt.ly/mKN1PwW"> Відповіді до тестів з ФВ </a>', parse_mode='html')
+    bot.send_message(message.chat.id, '<a href="bit.ly/slivtestov"> Відповіді до тестів з ФВ </a>', parse_mode='html')
 
 @bot.message_handler(commands=['myv'])
 def start(message):
