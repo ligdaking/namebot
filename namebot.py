@@ -59,7 +59,7 @@ def start(message):
 
 @bot.message_handler(commands=['teh'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/vwu-ajbb-wwh">Техніка та технології відеомонтажу</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313906">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15319">тицяй</a>\nВикладач: Супрун Олександр Олександрович', parse_mode="html")
+    bot.send_message(message.chat.id, 'Пара: <a href="ссылки пока нет">Техніка та технології відеомонтажу</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313906">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15319">тицяй</a>\nВикладач: Супрун Олександр Олександрович', parse_mode="html")
 
 @bot.message_handler(commands=['cos'])
 def start(message):
