@@ -41,6 +41,10 @@ def start(message):
 def start(message):
     bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/erd-pxjo-ofy">Логіка*</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=306729">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=14147">тицяй</a>\nВикладач: Старікова Галина Геньївна', parse_mode='html')
 
+@bot.message_handler(commands=['ppmm'])
+def start(message):
+    bot.send_message(message.chat.id, 'Пара: <a href=meet.google.com/ndf-zibj-jwe">Проектування пристроїв на мікроконтролерах і ПЛІС. Мікроконтролери*</a>\nВідвідування ЛК: <a href="https://dl.nure.ua/mod/attendance/view.php?id=314251">тицяй</a>\nВідвідування ЛБ: <a href="https://dl.nure.ua/mod/attendance/view.php?id=314253">тицяй</a>\nКурс: <a href="https://dl.nure.ua/course/view.php?id=15358#section-0">тицяй</a>\nВикладач: Зубков Олег Вікторович', parse_mode='html')
+
 @bot.message_handler(commands=['tek_kr'])
 def start(message):
     file = open('tek.pdf','rb')
