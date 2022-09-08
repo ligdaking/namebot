@@ -57,11 +57,11 @@ def start(message):
 def start(message):
     bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/ndf-zibj-jwe">Проектування пристроїв на мікроконтролерах і ПЛІС</a>\nВідвідування ЛК: <a href="dl.nure.ua/mod/attendance/view.php?id=314251">тицяй</a>\nВідвідування ЛБ: <a href="dl.nure.ua/mod/attendance/view.php?id=314253">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=14891">тицяй</a>\nВикладач: Зубков Олег Вікторович', parse_mode="html")
 
-bot.message_handler(commands=['teh'])
+@bot.message_handler(commands=['teh'])
 def start(message):
     bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/vwu-ajbb-wwh">Техніка та технології відеомонтажу</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313906">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15319">тицяй</a>\nВикладач: Супрун Олександр Олександрович', parse_mode="html")
 
-bot.message_handler(commands=['cos'])
+@bot.message_handler(commands=['cos'])
 def start(message):
     bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/eag-xpkq-zff">Цифрова обробка сигналів</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313528">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15256">тицяй</a>\nВикладач: Харченко Оксана Ігорівна', parse_mode="html")
 
