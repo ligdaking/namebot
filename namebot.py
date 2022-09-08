@@ -1,6 +1,6 @@
 # -*- coding: utf8 -*-
 import telebot
-import random
+
 
 bot = telebot.TeleBot('5514577445:AAHkIfQt_UbAwhWNscbgFXRamRGiFz18eEc')
 
@@ -41,10 +41,6 @@ def start(message):
 def start(message):
     bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/erd-pxjo-ofy">Логіка*</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=306729">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=14147">тицяй</a>\nВикладач: Старікова Галина Геньївна', parse_mode='html')
 
-@bot.message_handler(commands=['ppm'])
-def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href=meet.google.com/ndf-zibj-jwe">Проектування пристроїв на мікроконтролерах і ПЛІС. Мікроконтролери*</a>\nВідвідування ЛК: <a href="https://dl.nure.ua/mod/attendance/view.php?id=314251">тицяй</a>\nВідвідування ЛБ: <a href="https://dl.nure.ua/mod/attendance/view.php?id=314253">тицяй</a>\nКурс: <a href="https://dl.nure.ua/course/view.php?id=15358#section-0">тицяй</a>\nВикладач: Зубков Олег Вікторович', parse_mode='html')
-
 @bot.message_handler(commands=['tek_kr'])
 def start(message):
     file = open('tek.pdf','rb')
@@ -59,37 +55,8 @@ def start(message):
 def start(message):
     bot.send_message(message.chat.id, "поки юзлесс", parse_mode='MarkDown')
 
-
-
-
-
-@bot.message_handler(content_types=['text'])
-
-
-def first_number_step(message):
-    if message.text == 'Рандом':
-        msg = bot.send_message(message.chat.id, 'Введите начало диапазона')
-        bot.register_next_step_handler(msg, second_number_step)
-
-
-
-
-def second_number_step(message):
-    global NUM_first
-    NUM_first = int(message.text)
-    msg = bot.send_message(message.chat.id, 'Введите конец диапазона')
-    bot.register_next_step_handler(msg, result_number_step)
-
-
-
-def result_number_step(message):
-    global NUM_second
-    NUM_second = int(message.text)
-    result(message)
-
-
-
-def result(message):
-    bot.send_message(message.chat.id, 'Выпало число: ' + str(random.randint(NUM_first, NUM_second)))
+@bot.message_handler(commands=['ppmm'])
+def start(message):
+    bot.send_message(message.chat.id, 'Пара: <a href=meet.google.com/ndf-zibj-jwe">Проектування пристроїв на мікроконтролерах і ПЛІС. Мікроконтролери*</a>\nВідвідування ЛК: <a href="https://dl.nure.ua/mod/attendance/view.php?id=314251">тицяй</a>\nВідвідування ЛБ: <a href="https://dl.nure.ua/mod/attendance/view.php?id=314253">тицяй</a>\nКурс: <a href="https://dl.nure.ua/course/view.php?id=15358#section-0">тицяй</a>\nВикладач: Зубков Олег Вікторович', parse_mode='html')
 
 bot.polling(none_stop=True)
