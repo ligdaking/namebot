@@ -8,7 +8,7 @@ def start(message):
 
 @bot.message_handler(commands=['help'])
 def start(message):
-    bot.send_message(message.chat.id, '/dl -  посилання на dlnure\n/bd - посилання на пару Бази даних\n/csh - посилання на пару Цифрова схемотехніка\n/tvel - посилання на пару Твердотільна електроніка\n/log - посилання на пару Логіка\n/fv -  посилання на відповіді з Фізичного виховання\n/myv - список групи\n/mails - електронні адреси викладачів', parse_mode='MarkDown')
+    bot.send_message(message.chat.id, '/dl - dlnure\n/bd - Бази даних\n/csh - Цифрова схемотехніка\n/tvel - Твердотільна електроніка\n/log - Логіка\n/ppmm - Проектування пристроїв\n/teh - Технології відеомонтажу\n/cos - Цифрова обробка сигналів\n/fv - Відповіді з Фізичного виховання\n/myv - Список групи', parse_mode='MarkDown')
 
 @bot.message_handler(commands=['dl'])
 def start(message):
