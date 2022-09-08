@@ -1,7 +1,5 @@
 # -*- coding: utf8 -*-
 import telebot
-
-
 bot = telebot.TeleBot('5514577445:AAHkIfQt_UbAwhWNscbgFXRamRGiFz18eEc')
 
 @bot.message_handler(commands=['start'])
@@ -57,6 +55,7 @@ def start(message):
 
 @bot.message_handler(commands=['ppmm'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href=meet.google.com/ndf-zibj-jwe">Проектування пристроїв на мікроконтролерах і ПЛІС. Мікроконтролери*</a>\nВідвідування ЛК: <a href="https://dl.nure.ua/mod/attendance/view.php?id=314251">тицяй</a>\nВідвідування ЛБ: <a href="https://dl.nure.ua/mod/attendance/view.php?id=314253">тицяй</a>\nКурс: <a href="https://dl.nure.ua/course/view.php?id=15358#section-0">тицяй</a>\nВикладач: Зубков Олег Вікторович', parse_mode='html')
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/eei-unrr-crn">Твердотільна електроніка</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=318086">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=14891">тицяй</a>\nВикладач: Галат Олександр Борисович', parse_mode="html")
+
 
 bot.polling(none_stop=True)
