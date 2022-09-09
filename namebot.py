@@ -59,10 +59,10 @@ def start(message):
 
 @bot.message_handler(commands=['teh'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="ссылки пока нет">Техніка та технології відеомонтажу</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313906">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15319">тицяй</a>\nВикладач: Супрун Олександр Олександрович\nКредитів: 3', parse_mode="html")
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/pfm-yhvt-dws">Техніка та технології відеомонтажу</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313906">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15319">тицяй</a>\nВикладач: Супрун Олександр Олександрович\nКредитів: 3', parse_mode="html")
 
 @bot.message_handler(commands=['cos'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/eag-xpkq-zff">Цифрова обробка сигналів</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313528">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15256">тицяй</a>\nВикладач: Харченко Оксана Ігорівна\nКредитів: 4', parse_mode="html")
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/eag-xpkq-zff">Цифрова обробка сигналів</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313528">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15256">тицяй</a>\nВикладач: Харченко Оксана Ігорівна\nКредитів: 4\n', parse_mode="html")
 
 bot.polling(none_stop=True)
