@@ -67,7 +67,7 @@ def start(message):
 
 @bot.message_handler(commands=['ponedilok'])
 def start(message):
-    bot.send_message(message.chat.id, 'Понеділок, 20 вересня\n\n Пара: <a href="meet.google.com/ejm-fmfo-nsp">Бази даних</a>, Тип: ЛБ, Час: 11:15-12:50, 13:10-14:45\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313810">тицяй</a>\n\nПара: <a href="meet.google.com/erd-pxjo-ofy">Логіка*</a>, Тип: ЛК, Час: 14:55-16:30,16:40-18:15', parse_mode="html")
+    bot.send_message(message.chat.id, 'ПОНЕДІЛОК, 20 вересня\n\nПара: <a href="meet.google.com/ejm-fmfo-nsp">Бази даних</a>, Тип: ЛБ\nЧас: 11:15-12:50, 13:10-14:45\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313810">тицяй</a>\n\nПара: <a href="meet.google.com/erd-pxjo-ofy">Логіка*</a>, Тип: ЛК\nЧас: 14:55-16:30, 16:40-18:15\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=306729">тицяй</a>', parse_mode="html")
 
 @bot.message_handler(commands=['vivtorok'])
 def start(message):
