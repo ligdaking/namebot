@@ -65,4 +65,24 @@ def start(message):
 def start(message):
     bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/eag-xpkq-zff">Цифрова обробка сигналів</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313528">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15256">тицяй</a>\nВикладач: Харченко Оксана Ігорівна\nКредитів: 4\n', parse_mode="html")
 
+@bot.message_handler(commands=['ponedilok'])
+def start(message):
+    bot.send_message(message.chat.id, 'Понеділок, 20 вересня\n\n Пара: <a href="meet.google.com/ejm-fmfo-nsp">Бази даних</a>, Тип: ЛБ, Час: 11:15-12:50, 13:10-14:45\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313810">тицяй</a>\n\nПара: <a href="meet.google.com/erd-pxjo-ofy">Логіка*</a>, Тип: ЛК, Час: 14:55-16:30,16:40-18:15', parse_mode="html")
+
+@bot.message_handler(commands=['vivtorok'])
+def start(message):
+    bot.send_message(message.chat.id, '\n', parse_mode="html")
+
+@bot.message_handler(commands=['sereda'])
+def start(message):
+    bot.send_message(message.chat.id, '\n', parse_mode="html")
+
+@bot.message_handler(commands=['chetver'])
+def start(message):
+    bot.send_message(message.chat.id, '\n', parse_mode="html")
+
+@bot.message_handler(commands=['pyatnica'])
+def start(message):
+    bot.send_message(message.chat.id, '\n', parse_mode="html")
+
 bot.polling(none_stop=True)
