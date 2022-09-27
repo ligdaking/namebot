@@ -33,7 +33,7 @@ def start(message):
 
 @bot.message_handler(commands=['tvel'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/eei-unrr-crn">Твердотільна електроніка</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=318086">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=14891">тицяй</a>\nВикладач: Галат Олександр Борисович\nКредитів: 6', parse_mode="html")
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/ouv-pupt-kza">Твердотільна електроніка</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=332735">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=14891">тицяй</a>\nВикладач: Галат Олександр Борисович\nКредитів: 6', parse_mode="html")
 
 @bot.message_handler(commands=['log'])
 def start(message):
