@@ -55,7 +55,7 @@ def start(message):
 
 @bot.message_handler(commands=['ppmm'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/ndf-zibj-jwe">Проектування пристроїв на мікроконтролерах і ПЛІС</a>\nВідвідування ЛК: <a href="dl.nure.ua/mod/attendance/view.php?id=314251">тицяй</a>\nВідвідування ЛБ: <a href="dl.nure.ua/mod/attendance/view.php?id=314253">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=14891">тицяй</a>\nВикладач: Зубков Олег Вікторович\nКредитів: 4', parse_mode="html")
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/ndf-zibj-jwe">Проектування пристроїв на мікроконтролерах і ПЛІС</a>\nВідвідування ЛК: <a href="dl.nure.ua/mod/attendance/view.php?id=314251">тицяй</a>\nВідвідування ЛБ: <a href="dl.nure.ua/mod/attendance/view.php?id=314253">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15358">тицяй</a>\nВикладач: Зубков Олег Вікторович\nКредитів: 4', parse_mode="html")
 
 @bot.message_handler(commands=['teh'])
 def start(message):
@@ -65,24 +65,5 @@ def start(message):
 def start(message):
     bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/eag-xpkq-zff">Цифрова обробка сигналів</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313528">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15256">тицяй</a>\nВикладач: Харченко Оксана Ігорівна\nКредитів: 4\n', parse_mode="html")
 
-@bot.message_handler(commands=['day1'])
-def start(message):
-    bot.send_message(message.chat.id, 'ПОНЕДІЛОК, 20 вересня\n\nПара: <a href="meet.google.com/ejm-fmfo-nsp">Бази даних</a>, Тип: ЛБ 🧪\nЧас: 11:15-12:50, 13:10-14:45\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313810">тицяй</a>\n\nПара: <a href="meet.google.com/erd-pxjo-ofy">Логіка*</a>, Тип: ЛК 📚\nЧас: 14:55-16:30, 16:40-18:15\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=306729">тицяй</a>', parse_mode="html")
-
-@bot.message_handler(commands=['day2'])
-def start(message):
-    bot.send_message(message.chat.id, 'ВІВТОРОК, 21 вересня\n\nПара: <a href="meet.google.com/eag-xpkq-zff">Цифрова обробка сигналів</a>, Тип: ЛБ 🧪\nЧас: 11:15-12:50, 13:10-14:45\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313528">тицяй</a>', parse_mode="html")
-
-@bot.message_handler(commands=['day3'])
-def start(message):
-    bot.send_message(message.chat.id, '\n', parse_mode="html")
-
-@bot.message_handler(commands=['day4'])
-def start(message):
-    bot.send_message(message.chat.id, '\n', parse_mode="html")
-
-@bot.message_handler(commands=['day5'])
-def start(message):
-    bot.send_message(message.chat.id, '\n', parse_mode="html")
 
 bot.polling(none_stop=True)
