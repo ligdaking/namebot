@@ -25,7 +25,7 @@ def start(message):
 
 @bot.message_handler(commands=['bd'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="чел меняет ссылку ">Бази даних</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313810">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15303">тицяй</a>\nВикладач: Цехмістро Роман Іванович\nКредитів: 5', parse_mode="html")
+    bot.send_message(message.chat.id, 'Пара: Бази даних (посилання у відвідуванні)\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313810">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15303">тицяй</a>\nВикладач: Цехмістро Роман Іванович\nКредитів: 5', parse_mode="html")
 
 @bot.message_handler(commands=['csh'])
 def start(message):
