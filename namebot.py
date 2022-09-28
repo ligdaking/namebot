@@ -41,7 +41,7 @@ def start(message):
 
 @bot.message_handler(commands=['tvel_kr'])
 def start(message):
-    file = open('by how2explain and DenisLgv.pdf','rb')
+    file = open('leakstvel.rar','rb')
     bot.send_document(message.chat.id, file, 'kr')
 
 @bot.message_handler(commands=['kr1'])
