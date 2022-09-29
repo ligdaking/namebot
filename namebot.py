@@ -25,7 +25,7 @@ def start(message):
 
 @bot.message_handler(commands=['bd'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: Бази даних (посилання у відвідуванні)\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313810">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15303">тицяй</a>\nВикладач: Цехмістро Роман Іванович', parse_mode="html")
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/tuh-uayt-hfr">Бази даних</a>\nВідвідування: <a href="dl.nure.ua/mod/attendance/view.php?id=313810">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15303">тицяй</a>\nВикладач: Цехмістро Роман Іванович', parse_mode="html")
 
 @bot.message_handler(commands=['csh'])
 def start(message):
@@ -42,12 +42,13 @@ def start(message):
 @bot.message_handler(commands=['tvel_kr'])
 def start(message):
     file = open('leakstvel.rar','rb')
-    bot.send_document(message.chat.id, file, 'kr')
+    bot.send_document(message.chat.id, file, 'я ем бебрулю')
+
 
 @bot.message_handler(commands=['bebra'])
 def start(message):
     file = open('ESTMGO.png', 'rb')
-    bot.send_photo(message.chat.id, file, 'bober')
+    bot.send_photo(message.chat.id, file, 'я ем бебрулю')
 
 @bot.message_handler(commands=['mails'])
 def start(message):
