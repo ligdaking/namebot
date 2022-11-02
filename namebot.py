@@ -33,7 +33,7 @@ def start(message):
 
 @bot.message_handler(commands=['tvel'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/ouv-pupt-kza">Твердотільна електроніка</a>\nВідвідування ЛК: <a href="dl.nure.ua/mod/attendance/view.php?id=318086">тицяй</a> Відвідування ПЗ: <a href="dl.nure.ua/mod/attendance/view.php?id=332734">тицяй</a>\nВідвідування ЛБ: <a href="dl.nure.ua/mod/attendance/view.php?id=332735">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=14891">тицяй</a>\nВикладачі: Галат Олександр Борисович, Пятайкіна Марія Ігорівна', parse_mode="html")
+    bot.send_message(message.chat.id, 'Пара: Твердотільна електроніка\n<a href="https://meet.google.com/eei-unrr-crn">ЛК</a>\n<a href="https://meet.google.com/ouv-pupt-kza">ЛБ/ПЗ</a>\nВідвідування ЛК: <a href="dl.nure.ua/mod/attendance/view.php?id=318086">тицяй</a> Відвідування ПЗ: <a href="dl.nure.ua/mod/attendance/view.php?id=332734">тицяй</a>\nВідвідування ЛБ: <a href="dl.nure.ua/mod/attendance/view.php?id=332735">тицяй</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=14891">тицяй</a>\nВикладачі: Галат Олександр Борисович, Пятайкіна Марія Ігорівна', parse_mode="html")
 
 @bot.message_handler(commands=['log'])
 def start(message):
@@ -60,7 +60,7 @@ def start(message):
 
 @bot.message_handler(commands=['teh'])
 def start(message):
-    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/pfm-yhvt-dws">Техніка та технології відеомонтажу</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15319">тицяй</a>\nВикладач: Супрун Олександр Олександрович', parse_mode="html")
+    bot.send_message(message.chat.id, 'Пара: <a href="meet.google.com/ziw-cinq-jnm">Техніка та технології відеомонтажу</a>\nКурс: <a href="dl.nure.ua/course/view.php?id=15319">тицяй</a>\nВикладач: Супрун Олександр Олександрович', parse_mode="html")
 
 @bot.message_handler(commands=['cos'])
 def start(message):
